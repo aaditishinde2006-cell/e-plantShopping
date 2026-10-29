@@ -1,0 +1,114 @@
+
+/* General application styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Paradise Nursery landing page background */
+.background-image {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.app-container {
+  padding: 30px;
+}
+
+.about-us-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  line-height: 1.7;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background-color: #245c3a;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Product listing */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.plant-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Shopping cart */
+.cart-container {
+  padding: 24px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e7d46;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
